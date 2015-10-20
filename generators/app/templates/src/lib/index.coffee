@@ -1,4 +1,3 @@
-Chokidar = require 'chokidar'
 Extend   = require 'node.extend'
 Fs       = require 'fs'
 MkdirP   = require 'mkdirp'
@@ -6,11 +5,6 @@ Net      = require 'net'
 Daemon   = require 'daemon'
 Path     = require 'path'
 YAML     = require 'yamljs'
-{SOCKET_PATH, UNKNOWN_BACKEND_COMMNAND, UNKNOWN_PROVIDER} = require './common'
-
-BUILTIN_CONFIG = "#{__dirname}/../builtin/volbrid.yml"
-ETC_CONFIG = "/etc/volbrid.yml"
-HOME_CONFIG = "#{process.env.HOME}/.config/volbrid.yml"
 
 module.exports = class Daemon
 
