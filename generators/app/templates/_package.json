@@ -1,0 +1,27 @@
+{
+  "name": "$REPO_NAME",
+  "version": "0.0.1",
+  "description": "$REPO_DESC",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "make",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://$REPO_BASE/$REPO_USER/$REPO_NAME"
+  },
+  "author": "$REPO_FULLNAME",
+  "license": "MIT",
+  "preferGlobal": $REPO_PREFER_GLOBAL,
+  "bin": {
+  },
+  "man": [
+  ],
+  "bugs": {
+    "url": "https://$REPO_BASE/$REPO_USER/$REPO_NAME/issues"
+  },
+  "dependencies": {
+  }
+}
