@@ -1,26 +1,30 @@
 {
-  "name": "$REPO_NAME",
+  "name": "<%= appname %>",
   "version": "0.0.1",
-  "description": "$REPO_DESC",
+  "description": "<%= description %>",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "make",
-    "prepublish": "npm run compile"
+    "prepublish": "make"
   },
   "repository": {
     "type": "git",
-    "url": "https://$REPO_BASE/$REPO_USER/$REPO_NAME"
+    "url": "https://<%= repo_base %>/<%= repo_user %>/<%= appname %>"
   },
-  "author": "$REPO_FULLNAME",
-  "license": "MIT",
-  "preferGlobal": $REPO_PREFER_GLOBAL,
+  "author": {
+    "name": "<%= realname %>",
+    "email": "<%= email %>"
+  },
+  "license": "<%= license %>",
+  "preferGlobal": <%= preferGlobal %>,
   "bin": {
+    "<%= appname %>": "bin/<%= appname %>"
   },
   "man": [
+    "man/<%= appname %>.1.gz"
   ],
   "bugs": {
-    "url": "https://$REPO_BASE/$REPO_USER/$REPO_NAME/issues"
+    "url": "https://<%= repo_base %>/<%= repo_user %>/<%= appname %>/issues"
   },
   "dependencies": {
   }

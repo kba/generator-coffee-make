@@ -1,0 +1,10 @@
+{
+  "foo": 42,
+  "email": "unixprog@gmail.com",
+  "realname": "John Doe",
+  "repo_base": "github.com",
+  "repo_user": "kba",
+  "license": "MIT",
+  "description": "Some explanation",
+  "preferGlobal": false
+}

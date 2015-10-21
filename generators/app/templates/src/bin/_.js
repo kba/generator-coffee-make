@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-var daemonize = require('daemon');
-
-var daemon = new Daemon(options);
+var daemon = new <%= AppName %>Daemon(options);
 
 // daemonize();
 
